@@ -63,3 +63,31 @@ function anteriorRegistro(){
     
 }
 
+function modificarRegistro(){
+    aIsbn[posicion].firstChild.nodeValue=isbn.value;
+    aTitulo[posicion].firstChild.nodeValue=titulo.value;
+    aAutor[posicion].firstChild.nodeValue=autor.value;
+    aEditorial[posicion].firstChild.nodeValue=editorial.value;
+    aPaginas[posicion].firstChild.nodeValue=paginas.value;
+}
+
+function borrarRegistro(){
+   /* delete aIsbn[posicion];
+    aIsbn.splice(posicion,1);
+    aTitulo.splice(posicion,1);
+    aAutor.splice(posicion,1);
+    aEditorial.splice(posicion,1);
+    aPaginas.splice(posicion,1);*/
+
+    var es=aIsbn.toArray;
+    alert(es)
+
+    if(posicion!=0){
+        posicion=0;
+    }else{
+        posicion=1;
+    }
+    mostrarRegistro();
+    
+}
+
