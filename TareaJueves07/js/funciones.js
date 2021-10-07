@@ -14,7 +14,7 @@ var aTitulo=new Array();
 var aAutor=new Array();
 var aEditorial=new Array();
 var aPaginas=new Array();
-
+cargarXml();
 
 function cargarXml(){
     //Leemos los datos del fichero datos.js en formato xml 
@@ -63,4 +63,3 @@ function anteriorRegistro(){
     
 }
 
-cargarXml();
